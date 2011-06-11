@@ -1,0 +1,30 @@
+
+-------------------------------
+
+A C# library for the oDesk API
+-------------------------------
+
+Maintained by Daniel Sim (me@danielsim.co.uk), contributions welcome.
+
+
+
+~ Overview ~
+
+Currently demonstrates how to authenticate a user using OAuth, then query the oDesk API on their behalf.
+
+It's a work in progress with only two working API methods. If you use this library and add other methods, please contribute your source to the project.
+
+Uses the DotNetOpenAuth package installable through NuGet.
+
+I've substituted the InMemoryTokenManager in my production code with one using Entity Framework.
+
+
+~ To be done ~
+
+- Split API methods out, add more to cover the whole API
+
+- Example project
+
+- Separate unit test project (currently within my own project)
+
+...all help appreciated!
