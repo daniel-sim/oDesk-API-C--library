@@ -28,3 +28,30 @@ I've substituted the InMemoryTokenManager in my production code with one using E
 - Separate unit test project (currently within my own project)
 
 ...all help appreciated!
+
+
+~ Example usage ~
+
+Simple example using MVC and a custom token manager based on the entity framework:
+
+
+        public virtual ActionResult Index(ODeskAuthModel m)
+        {
+            var tokenManager = new ODeskTokenManager();
+
+            var odesk = new WebConsumer(ODeskConsumer.ServiceDescription, tokenManager);
+
+            var accessTokenResponse = odesk.ProcessUserAuthorization();
+            if (accessTokenResponse != null) //Authorised
+            {
+                m.AccessToken = accessTokenResponse.AccessToken;
+                m.Result = ODeskConsumer.GetTeams(odesk, m.AccessToken).ToString();
+            }
+            else if (m.AccessToken == null)
+            {
+                // If we don't yet have access, immediately request it.
+                ODeskConsumer.RequestAuthorization(odesk);
+            }
+
+            return View(m);
+        }
