@@ -1,0 +1,7 @@
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\bin\Debug\oDeskAPI.dll
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\bin\Debug\oDeskAPI.pdb
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\bin\Debug\DotNetOpenAuth.dll
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\bin\Debug\DotNetOpenAuth.xml
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\obj\Debug\oDeskAPI.dll
+C:\SVN\Plug in SEO\pluginseo_v2\PlugInSEO\oDeskAPI\obj\Debug\oDeskAPI.pdb
